@@ -13,7 +13,16 @@ function displayRndImg(wordArray, imagesCount) {
 
 function checkWord(imageElement) {
     let word = imageElement.id;
-    alert("Значение слова: " + word);
+    let userWord = prompt("Input name:");
+
+    if(userWord === word)
+    {
+        alert("True!")
+    }
+    else
+    {
+        alert("False!")
+    }
 }
 
 displayRndImg(words, words.length);
